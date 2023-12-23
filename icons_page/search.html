@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Items</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="search.css">
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Open Sans', sans-serif; -->
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="topmost-text">
+            <p class="top-line">Pre-book 2 skins for ₹799/- or 10% off on 1 skin (CODE: <br> LAYERS10), Hurry!</p>
+        </div>
+        <nav>
+            <!-- hamburger menu -->
+
+            <a href="/index.html"> <img src="/images/Logo_White.webp" alt="" class="img"></a>
+
+            <div class="dropdown">
+                <!-- <div class="dropdown-heading">Select Device <img src="/images/icons8-chevron-24 (1).png" alt="">
+                </div> -->
+                <div class="dropdown-heading skin-collection-list">Skin Collection <img src="/images/icons8-chevron-24 (1).png" alt="">
+                
+                    <div class="skins_list">
+                       <a href="/collections/dark.html"> <li> Dark </li></a>
+                       <a href="/collections/wanderlust.html"> <li> wanderlust </li></a>
+                       <a href="#perky-pastels"><li>perky Pastels </li> </a>
+                       <a href="/collections/cyberforce.html"><li>cyberforce </li></a>
+                       <a href="#new-arrivals"><li>New Arrivals</li></a>
+                    </div>
+                </div>
+                <div class="dropdown-heading">FAQs </div>
+                <div class="dropdown-heading">Device not Found ?</div>
+            </div>
+            <div class="icons">
+                <a href="#"><img src="/images/icons8-search.svg" alt=""></a>
+                <a href="#"><img src="/images/icons8-user-24.png" alt=""></a>
+                <a href="#"><img src="/images/icons8-shopping-bag-48.png" alt=""></a>
+            </div>
+        </nav>
+    </section>
+
+    <div class="main_container">
+        <section class="search_box">
+            <p class="search_p">Search Our Site</p>
+            <div class="search_input">
+                <input type="text" id="search-item" placeholder="search" class="search-item" onkeyup="search()">
+                <button class="search_button"><img src="/images/icons8-search.svg" alt=""></button>
+            </div>
+
+            <section class="search_product">
+
+                <div class="product_list" id="product-list">
+                    <div class="product">
+                        <a href="/index.html">
+                            <div class="item">
+                                <img src="/images/new arrivals/3.webp" alt="">
+                                <p>New Arrivals</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="product">
+                        <a href="/collections/cyberforce.html">
+                            <div class="item">
+                                <img src="/images/cyberforce-mobile-view.webp" alt="">
+                                <p>Cyberforce collections</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="/collections/dark.html">
+                            <div class="item">
+                                <img src="/images/dark-collection-mobile image.webp" alt="">
+                                <p>Dark Collections</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="/collections/wanderlust.html">
+                            <div class="item">
+                                <img src="/images/wanderlust-mobile-view.webp" alt="">
+                                <p>Wanderlust Collections</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="/#perky-pastels"> 
+                            <div class="item">
+                                <img src="/images/perky pestols collection/img1.webp" alt="">
+                            <p>Perky Pastel Collections</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="/#recently-added"> 
+                            <div class="item">
+                                <img src="/images/RECENTLY-added/img1.webp" alt="">
+                            <p>Recently Added</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+    </div>
+
+    <script src="search.js"></script>
+</body>
+
+</html>

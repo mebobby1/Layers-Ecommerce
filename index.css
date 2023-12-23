@@ -1,0 +1,899 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    /* width: 99.9%; */
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+
+/*  grid styling for new-arrivals, wanderlust collections */
+
+.gallery-images img {
+    width: 25rem;
+    cursor: pointer;
+}
+
+.gallery-images {
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 0.5rem;
+    justify-items: center;
+
+}
+/* ====== hamburger menu ===== */
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+}
+.hamburger:focus{
+    outline: none;
+
+}
+/* ========= top section =========== */
+.top-line {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem;
+}
+
+/*========= navbar =========  */
+nav {
+    background-color: rgb(27, 27, 28);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+nav .img {
+    height: 6.5rem;
+    cursor: pointer;
+
+}
+
+nav .dropdown{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+
+}
+
+.dropdown-heading {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.dropdown-heading:hover {
+    color: #c5c6d0;
+    transition: all ease-in 5ms;
+}
+
+.icons a img {
+    height: 2.1rem;
+    margin: 1.7rem 1.2rem;
+    cursor: pointer;
+}
+/* dropdown list */
+.skin-collection-list{
+    position: relative;
+  display: inline-block;
+ 
+    
+}
+.skins_list{
+    display: none;
+    position: absolute;
+    padding-inline:1rem ;
+
+    
+}
+.skins_list li{
+    color: white;
+    font-weight: 400;
+    background: #000000;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+ 
+}
+.skins_list li:hover{
+    color: #c5c6d0;
+}
+.skin-collection-list:hover .skins_list{
+    display: block;
+    z-index: 9999;
+}
+
+
+
+/* ========= swiper styling ============ */
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+    background-color: #cfc9d0;
+}
+
+.slide-1 {
+    background-image: url(/images/hirooo04.webp);
+
+}
+
+.slide-2 {
+    background-image: url(/images/hero-2.webp);
+
+}
+
+.slide-2 h1,
+p {
+    color: #000000 !important;
+}
+
+.slide-3 {
+    background-image: url(/images/hero-3.webp);
+}
+
+.swiper-slide {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 7rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.text h1 {
+    font-size: 6.75rem;
+    color: #fff;
+    word-wrap: break-word;
+
+}
+
+.text p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0rem;
+    color: #fff;
+
+}
+
+.btn-primary {
+    color: white;
+    border: .1rem solid black;
+    margin-top: 2rem;
+    font-size: 2rem;
+    width: fit-content;
+    padding: 1rem 3rem;
+    box-shadow: #fff 0 3px 20px;
+    background-color: #000000 !important;
+    border-radius: .5rem;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    color: #cfc9d0;
+    transition: 3ms ease;
+}
+
+.swiper-pagination-bullet {
+    padding: 0.1px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: black !important;
+    padding-inline: 10px;
+}
+
+
+
+
+
+/* ====== image gallery desgin ======= */
+
+.gallery-section {
+    width: 90%;
+    min-height: 90vh;
+    margin: 2rem auto;
+    overflow: hidden;
+
+}
+
+h2 {
+    color: #000000;
+    font-size: 2.8rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.span2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: .5rem;
+    text-decoration: line-through;
+
+}
+
+
+
+
+
+/* =========== dark collection ============= */
+.dark-collections {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 90vh;
+
+}
+
+.mobile-img {
+    display: none;
+}
+
+.cta a img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+/*  ======  dark collection page styling */
+
+.dark-collection-banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/darkCollection/temp-collection.webp);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.text-area {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-area .para1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+
+}
+
+.text-area .para2 {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.text-area a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-weight: 700;
+
+}
+
+.dark-collection-desc {
+    background-color: #ededed;
+}
+
+h4 {
+    font-size: 4.3rem;
+}
+
+.dark-collection-desc p {
+    font-size: 1.8rem;
+    max-width: 650px;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 2rem ;
+    
+}
+
+.left img {
+    height: 70rem;
+
+}
+
+.dark-collection-grid img {
+    width: 100%;
+}
+
+/* ================= #your own skin ================== */
+
+.own-your-skin-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.your-own-skin-items {
+    display: flex;
+    flex-direction: column;
+}
+.own-your-skin h4 {
+    text-align: center;
+    padding: 6rem;
+}
+
+.own-your-skin-grid img {
+    width: 30rem;
+    margin: 1.2rem;
+    cursor: pointer;
+    /* margin: 1rem; */
+}
+
+.own-your-skin-button {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: .5rem 1.2rem;
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    height: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+
+}
+
+.card-foot h3,
+span {
+    
+    font-weight: 700;
+}
+
+.own-your-skin-button:hover {
+    color: #ededed;
+    background: #000000;
+
+}
+
+.footer-own-your-skin {
+    background-image: url(./images/darkCollection/footer.webp);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.footer-own-your-skin p {
+    font-size: 1.8rem;
+    display: block;
+    margin-left: 10rem;
+}
+
+/*===============  wanderlust banner =================  */
+
+.wanderlust-banner {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 90vh;
+}
+
+/* ================= #wanderlust page ================== */
+
+.wanderlust-main {
+    background-image: url(./images/wandurlust/hero-wanderlust-page.webp);
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(./images/darkCollection/temp-collection.webp); */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.right{
+    padding: 4rem;
+    
+}
+/* ======= CYBERFORCE PAGE ============  */
+.cyberforce{
+    background-image: url(/images/cyberforce/cyberforce\ header\ banner.webp);
+}
+
+
+
+
+.desktop-footer{
+    display: block;
+    width: 100vw;
+
+}
+.mobile-footer{
+    display: none;
+}
+
+
+/*  --------------- responsiveness ----------------------- */
+
+@media screen and (max-width: 1200px) {
+    nav {
+        height: 8vh;
+        padding: 1rem;
+    }
+    nav .img {
+        height: 5.5rem;
+        cursor: pointer;
+    
+    }
+
+    .swiper {
+        height: 70vh;
+    }
+
+    .slide-1,
+    .slide-2,
+    .slide-3 {
+        background-position: top 25% right 40%;
+
+    }
+
+    .swiper-slide h1 {
+        font-size: 5.5rem;
+    }
+
+    .swiper-slide p {
+        font-size: 1.75rem;
+    }
+
+    .btn-primary {
+        color: white;
+        border: .1rem solid black;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        width: fit-content;
+        padding: 0.8rem 2rem;
+        box-shadow: #fff 0 3px 20px;
+        background-color: #000000 !important;
+        border-radius: .5rem;
+        text-align: center;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+
+    /* ============dark collection page ============ */
+    .dark-collection-desc {
+        background-color: #ededed;
+    }
+    
+    h4 {
+        font-size: 3.5rem;
+    }
+    
+    .dark-collection-desc p {
+        font-size: 1.2rem;
+        max-width: 100%;
+    
+    }
+    
+    .dark-collection-desc img {
+        height: 50rem;
+    }
+    .flex .right{
+        padding: 2rem;
+    }
+
+    /* =========== wanderlust banner ========== */
+    .wanderlust-main{
+        background-position:top 25% right 25%;
+    }
+
+    /* ============ footer banner ============ */
+    .desktop-footer{
+        display: block;
+        width: 100vw;
+        height: 100%;
+    }
+    .mobile-footer{
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width: 780px) {
+    
+    #nav-ul{
+        display: none;
+        width: 100%;
+    }
+    #nav-ul.show{
+        display: flex;
+
+    }
+    .hamburger{
+        display: block;
+    }
+    nav {
+        height: 10vh;
+    }
+    nav .img {
+        height: 4.5rem;
+        cursor: pointer;
+    
+    }
+.dropdown{
+    display: none;
+}
+    .swiper {
+        height: 100vh;
+
+    }
+
+    .swiper-slide {
+        align-items: center;
+        position: absolute;
+    }
+
+    .btn-primary {
+        color: white;
+        border: .1rem solid black;
+        margin-top: 0.8rem;
+        font-size: 1.2rem;
+        width: fit-content;
+        padding: .5rem 1.5rem;
+        box-shadow: #fff 0 3px 20px;
+        background-color: #000000 !important;
+        border-radius: .5rem;
+        text-align: center;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .text {
+        /* align-items: center; */
+        position: relative;
+        top: 40%;
+
+    }
+
+    .slide-1 {
+        background-image: url(/images/mobile-hero-images/image1.webp);
+        /* opacity: 80%; */
+    }
+
+    .slide-2 {
+        background-image: url(/images/mobile-hero-images/image.webp);
+    }
+
+    .slide-3 {
+        background-image: url(/images/mobile-hero-images/image2.webp);
+    }
+
+    .swiper-slide h1,
+    p {
+        color: #000000;
+    }
+
+    .slide-1,
+    .slide-2,
+    .slide-3 {
+        background-position: top 25% right 0%;
+        background-position: center;
+
+    }
+
+    .swiper-slide h1 {
+        font-size: 3.3rem;
+    }
+
+    .swiper-slide p {
+        font-size: 1rem;
+    }
+
+    /* nav styling */
+    .dropdown {
+        display: none;
+    }
+
+    /* =========== gallery images =========== */
+
+
+    /* ======== dark collection page ======== */
+  
+    .dark-collection-banner{
+        background-position: top 35% right 10%;
+    }
+    .text-area{
+        border: 1px solid black;
+        background-color: #e7e0eaac;
+        padding: 1.5rem 0.5rem;
+        opacity: 0.8;
+        filter: drop-shadow(7px 9px 2px rgba(20, 1, 1, 0.35));
+
+    }
+    .text-area .para1 {
+        font-size: 4.5rem;
+
+    }
+    .text-area .para2 {
+        font-size: 2rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    .text-area a {
+        display:none;
+    }
+    .dark-collection-desc img {
+        height: 30rem;
+    }
+
+    .flex h4 {
+        font-size: 3rem;
+    }
+    
+    .flex p {
+        font-size: 1rem;
+        max-width: 100%;
+    
+    }
+
+     /* =========== wanderlust banner ========== */
+     .wanderlust-main{
+        background-position:top 100% right 5%;
+    }
+    .cyberforce{
+        background-position:top 100% right 5%;
+    }
+
+     /* ============ footer banner ============ */
+    
+    .footer-own-your-skin p {
+        display: none;
+    }
+  
+    .desktop-footer{
+        display: none;
+    }
+    .mobile-footer{
+        display: block;
+        width: 100vw;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .slide-1,
+    .slide-2,
+    .slide-3 {
+        background-position: top 25% right 25%;
+        /* background-position: center; */
+
+    }
+
+    .text {
+        border: 1px solid black;
+        background-color: #CFC9D0;
+        padding: 0.5rem 0.5rem;
+        opacity: 0.9;
+        filter: drop-shadow(7px 9px 2px rgba(0, 0, 0, 0.35));
+
+    }
+
+    .swiper-slide h1 {
+        font-size: 2rem;
+    }
+
+    .swiper-slide p {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .btn-primary {
+        color: white;
+        border: .1rem solid black;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        width: fit-content;
+        padding: 0.5rem 0.8rem;
+        box-shadow: #fff 0 3px 20px;
+        background-color: #000000 !important;
+        border-radius: .5rem;
+        text-align: center;
+        font-weight: 700;
+        cursor: pointer;
+
+    }
+
+
+
+    /* ======= dark collection ========= */
+
+
+    /* =========== gallery images =========== */
+    .gallery-images img {
+        width: 15rem;
+        cursor: pointer;
+    }
+
+    .gallery-images {
+        width: 90%;
+        margin: 2rem auto 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        justify-items: center;
+
+    }
+
+
+/* /* ======== dark collection page ======== */ 
+    .text-area{
+
+        border: 1px solid black;
+        background-color: #e7e0eaac;
+        padding: 0.5rem 0.5rem;
+        opacity: 0.8;
+        filter: drop-shadow(7px 9px 2px rgba(20, 1, 1, 0.35));
+
+    }
+    .dark-collection-btn{
+        display: none;
+    }
+    
+.text-area {
+    width: 90%;
+    margin: 0 auto;
+}
+.para1{
+    font-family: Westiva;
+    
+}
+.text-area .para1 {
+    font-size: 4.5rem;
+    font-weight: bolder;
+
+}
+.text-area .para2 {
+    font-size: 2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.dark-collection-desc img{
+    width: 100vw;
+    height: auto;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem ;
+    /* flex-direction: column-reverse; */
+
+}
+.flex h4{
+    text-align: center;
+}
+.flex .mobile-order{
+    order: 2;
+}
+
+/* ============ # YOUR OWN SKIN ========== */
+
+.own-your-skin-grid{
+    display: flex;
+    flex-direction: column;
+}
+.your-own-skin-items img{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 90vw;
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
+.own-your-skin-button{
+    background: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+ /* =========== wanderlust banner ========== */
+ .wanderlust-main{
+    background-position:top 10% left 85%;
+}
+
+  /* ============ footer banner ============ */
+  .footer{
+    background-position: top 55% left 55%;
+}
+}
+
+
+
+/* create a simple ui, which has one input field that accepts only numbers */
+
+/* if the user types negative numbers, show "enter a positive value" */
+/* if the user types and even number, show next 3 even numbers" */
+/* if the user types an odd numbers, show the next 3 odd */
